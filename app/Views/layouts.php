@@ -24,6 +24,7 @@
     <h2>Bienvenido al sistema de mensajes</h2>
     <p>Selecciona una opción del menú para comenzar.</p>
   </main>
+  
   <div>
     <?php include $viewfile; ?>
   </div>
@@ -33,5 +34,7 @@
         hecho con corazón en PHP MVC
     </small>
   </footer>
+  
+  <script src="<?= BASE_URL ? rtrim(BASE_URL, '/') : '' ?>/assets/js/app.js"></script>
 </body>
 </html>
