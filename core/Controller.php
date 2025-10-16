@@ -9,11 +9,11 @@ class Controller {
       echo "Vista no encontrada: {$view}";
       return;
     }
-    include __DIR__ . '/../app/Views/layout.php';
+    include __DIR__ . '/../app/Views/layouts.php';
   }
 
   protected function redirect(string $path) {
-    if (BASE_URL) {
+    if (defined('BASE_URL') && BASE_URL) {
       header('Location: ' . rtrim(BASE_URL, '/') . '/' . ltrim($path, '/'));
     } else {
       header('Location: ' . '/' . ltrim($path, '/'));

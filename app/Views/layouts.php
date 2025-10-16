@@ -26,7 +26,7 @@
   </main>
   
   <div>
-    <?php include $viewfile; ?>
+    <?php include $viewFile; ?>
   </div>
 
   <footer>

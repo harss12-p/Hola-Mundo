@@ -1,13 +1,13 @@
 <?php
 //configuracion para la conexion
-define(constant_name:"DB_HOST",value:"127.0.0.1");
-define(constant_name:"DB_NAME",value:"mensaje:HLCC");
-define(constant_name:"DB_USER",value:"root");
-define(constant_name:"DB_PASS",value:"");
-define(constant_name:"DB_PORT",value:"3306");
-define(constant_name:"DB_URL",value:"/HOLA-MUNDO/public");
-define(constant_name:"UPLOAD_DIR",value:__DIR__."/../public/imagenes");
-define(constant_name:"MAX_IMAGE_BYTES",value: 2*1024*1024);
-define(constant_name:"ALLOWED_EXT",value:["jpg","png","jpeg","gif","webp"]);
+define("DB_HOST","127.0.0.1");
+define("DB_NAME","mensaje_hlcc");
+define("DB_USER","root");
+define("DB_PASS","");
+define("DB_PORT","3306");
+define("BASE_URL","/HOLA-MUNDO/public");
+define("UPLOAD_DIR",__DIR__."/../public/imagenes");
+define("MAX_IMAGE_BYTES", 2*1024*1024);
+define("ALLOWED_EXT",["jpg","png","jpeg","gif","webp"]);
 
 ?>

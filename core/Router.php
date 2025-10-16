@@ -23,10 +23,14 @@ class Router {
       $uri = substr($uri, strlen($this->base));
       if ($uri === '' || $uri === false) { $uri = '/'; }
     }
+    // Handle index.php as root
+    if ($uri === '/index.php') {
+      $uri = '/';
+    }
     return $this->normalize($uri);
   }
 
-  public function dispatch() {
+  public function run() {
     $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
     $path = $this->currentPath();
     $handler = $this->routes[$method][$path] ?? null;
